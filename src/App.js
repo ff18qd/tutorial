@@ -6,7 +6,7 @@ export default class App extends Component {
     return (
       <div>
           <h1>Styled Components & Atomic Design</h1>
-      <div>
+      </div>
     );
   }
 }
