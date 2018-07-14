@@ -1,4 +1,4 @@
-# tutorial
+# Styled Components with Wobbly Tutorial
 Use this repository to get to grips with the design patterns in our main repo.
 
 1. Make sure you've installed,  yarn, and node to your machine, and your command line works. Git also makes the process easier, but is not a requirement.
@@ -12,9 +12,4 @@ Use this repository to get to grips with the design patterns in our main repo.
 ![yarn installing](https://user-images.githubusercontent.com/30422939/42356292-4c18cd9e-8097-11e8-82ba-700134cdccca.JPG)
 7. Run $ yarn start, Wobbly app will be opened in your browser on localhost:3000
 ![after yarn start](https://user-images.githubusercontent.com/30422939/42356295-4e476148-8097-11e8-9dfa-ea21dd35fbd6.JPG)
-8. INSIDE THE APPLICATION → Making and using stylised components.
-
-
-
-
-
+8. INSIDE THE APPLICATION → Making and using styled components.
