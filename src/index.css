@@ -1,3 +1,40 @@
-body {
+/* Resets */
+
+body, h1, h2 {
   margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Animations */
+
+@keyframes slide-in {
+  from {
+    max-width: 1px;
+  }
+  to{
+    max-width: 100%;
+  }
+}
+
+@keyframes skew-in {
+  from {
+    background: #87ace5;
+    transform: translateX(-5px) translateY(0) skewY(0deg);
+  }
+  to{
+    opacity: 1;
+    background: #d4e4fc;
+    transform: translateX(0) translateY(4px) skewY(40deg);
+  }
 }
