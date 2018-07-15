@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // Styled Components
-import { PageWrapper, Header, Main, Workspace } from './styles';
+import { PageWrapper, Header, Main, WorkspaceWrapper } from './styles';
 
 // Components
 import SideBar from './components/SideBar';
@@ -22,14 +22,14 @@ export default class App extends Component {
             <Router>
               <Main>
                 <SideBar pages={pages} />
-                <Workspace>
+                <WorkspaceWrapper>
                   {
                     /* Dynamically Generate Routes with Page Component Template and pass the page object information along as props */
                     pages.map(page => {
                       return  <Route key={page.id} path={page.route} component={()=><PageTemplate {...page}/>}/>
                     })
                   }
-                </Workspace>
+                </WorkspaceWrapper>
               </Main>
             </Router>
         </PageWrapper>

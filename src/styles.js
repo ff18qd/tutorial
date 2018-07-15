@@ -18,6 +18,8 @@ export const PageWrapper = styled.div`
 // Header
 export const Header = styled.header`
   display: flex;
+  position: fixed;
+  width: 100%;
   align-items: center;
   box-sizing: border-box;
   height: 90px;
@@ -40,12 +42,17 @@ export const Header = styled.header`
 // Main Area (Everything South of the Header)
 export const Main = styled.div`
   display: flex;
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
+  margin-top: 90px;
 `;
 
 // SideBar
 
 export const SideBarWrapper = styled.div`
+  position: fixed;
+  left:0;
+  top: 90px;
+  height: calc(100vh - 90px);
   width: 320px;
   background: ${ DARK_BLUE };
   color: white;
@@ -118,8 +125,9 @@ export const StyledLink = styled(NavLink)`
 `;
 
 // Workspace
-export const Workspace = styled.div`
-  flex: 1;
+export const WorkspaceWrapper = styled.div`
+  margin-left: 320px;
+  width: 100%;
   background: ${LIGHT_BLUE};
   background-image:
     linear-gradient(to right,
@@ -131,4 +139,7 @@ export const Workspace = styled.div`
 // Page Template
 export const MarkdownWrapper = styled.div`
   padding: 30px;
+  a {
+    text-decoration: underline;
+  }
 `;
