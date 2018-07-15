@@ -129,9 +129,6 @@ export const Workspace = styled.div`
 `;
 
 // Page Template
-export const PageHeader = styled.h2`
+export const MarkdownWrapper = styled.div`
   padding: 30px;
-`;
-
-export const PageDescription = styled.p`
 `;
