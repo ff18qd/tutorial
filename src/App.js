@@ -1,12 +1,38 @@
+// Dependencies
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+// Styled Components
+import { PageWrapper, Header, Main, Workspace } from './styles';
+
+// Components
+import SideBar from './components/SideBar';
+import PageTemplate from './components/PageTemplate';
+
+// Page Data & Routes
+import pages from './page-data';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-          <h1>Styled Components & Atomic Design</h1>
-      </div>
+        <PageWrapper>
+            <Header>
+              <h1><span>Styled Components &</span> <span>Atomic Design Tutorial</span></h1>
+            </Header>
+            <Router>
+              <Main>
+                <SideBar pages={pages} />
+                <Workspace>
+                  {
+                    /* Dynamically Generate Routes with Page Component Template and pass the page object information along as props */
+                    pages.map(page => {
+                      return  <Route key={page.id} path={page.route} component={()=><PageTemplate {...page}/>}/>
+                    })
+                  }
+                </Workspace>
+              </Main>
+            </Router>
+        </PageWrapper>
     );
   }
 }
