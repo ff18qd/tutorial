@@ -44,7 +44,7 @@ const ORGANISMS = {
 
 function addSlugAndId(page, index){
   page.id = `page_${index}`;
-  page.route = `/${slugify(page.title).toLowerCase()}`;
+  page.route = `/tutorial/${slugify(page.title).toLowerCase()}`;
   return page;
 }
 
