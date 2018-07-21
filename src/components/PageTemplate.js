@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MarkdownWrapper } from '../styles';
+import { MarkdownWrapper, MainContent } from '../styles';
 import Markdown from 'markdown-to-jsx';
 import axios from 'axios';
 import AppWorkspace from './AppWorkspace';
@@ -20,12 +20,12 @@ class PageTemplate extends Component {
   render(){
     const { markdown } = this.state;
     return (
-      <div>
-        <MarkdownWrapper>
+      <MainContent className="main-content">
+        <MarkdownWrapper className="markdown-wrapper">
           <Markdown>{markdown}</Markdown>
         </MarkdownWrapper>
         <AppWorkspace/>
-      </div>
+      </MainContent>
     )
   }
 }

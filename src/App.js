@@ -22,7 +22,7 @@ export default class App extends Component {
             <Router>
               <Main>
                 <SideBar pages={pages} />
-                <WorkspaceWrapper>
+                <WorkspaceWrapper className="workspace-wrapper">
                   {
                     /* Dynamically Generate Routes with Page Component Template and pass the page object information along as props */
                     pages.map(page => {

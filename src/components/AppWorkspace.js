@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import FakeButtons from './FakeButtons';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import MyComponent from '../workspace/MyComponent';
 
 const AppWorkspace = () =>
   <ScrollableAnchor id="MyComponent">
@@ -10,6 +11,7 @@ const AppWorkspace = () =>
         <FakeButtons/>
         <Title>My Component</Title>
       </ToolBar>
+      <MyComponent/>
     </AppWorkspaceWrapper>
   </ScrollableAnchor>
 
