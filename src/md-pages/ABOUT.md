@@ -1,4 +1,4 @@
-## About This Tutorial
+# About This Tutorial
 This tutorial will give you a brief overview of how [Wobbly](https://bananananaba.com/Wobbly.html) volunteers are using Styled Components and Atomic Design in their process. Some experience with React is recommended, but there's opportunity for developers of all skill levels to get involved.
 
 Rather than working in a cloud environment you'll be working in your local environment since that's how you'll likely be working as a contributor to this project. While you are encouraged to explore and take a look at how this tutorial project has been set up, understanding exactly how everything works is by no means a requirement to contribute.

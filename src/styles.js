@@ -42,24 +42,24 @@ export const Header = styled.header`
 // Main Area (Everything South of the Header)
 export const Main = styled.div`
   display: flex;
-  min-height: calc(100vh - 90px);
+  height: calc(100vh - 90px);
   margin-top: 90px;
 `;
 
 // SideBar
 
 export const SideBarWrapper = styled.div`
-  position: fixed;
-  left:0;
-  top: 90px;
   height: calc(100vh - 90px);
-  width: 320px;
+  max-width: 320px;
   background: ${ DARK_BLUE };
   color: white;
   box-sizing: border-box;
   padding-top: 30px;
   border-right: solid ${ WHITE_LAYER } 10px;
   ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     &:nth-child(1){
       margin-top: -15px;
     }
@@ -126,9 +126,10 @@ export const StyledLink = styled(NavLink)`
 
 // Workspace
 export const WorkspaceWrapper = styled.div`
-  margin-left: 320px;
-  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
   background: ${LIGHT_BLUE};
+  flex:1;
   background-image:
     linear-gradient(to right,
       rgba(0,0,0,0.1) 0px,
@@ -143,3 +144,6 @@ export const MarkdownWrapper = styled.div`
     text-decoration: underline;
   }
 `;
+
+export const MainContent = styled.div`
+`

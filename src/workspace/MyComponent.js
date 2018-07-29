@@ -6,11 +6,27 @@ This is the main entry point and your "workspace" as you follow along with the t
 
 // Dependencies
 import React from 'react';
+import styled from 'styled-components';
+
+const boxStyle = { border: 'solid 1px white', margin: '10px', width: '100px' }
+const BoxOfTomatoes = (props) => <div style={boxStyle}> { props.children } </div>
 
 const MyComponent = () => (
-  <div>
-
+  <div id="MyComponent">
+    <BoxOfTomatoes>
+      <Tomato/>
+      <Tomato/>
+      <Tomato/>
+    </BoxOfTomatoes>
   </div>
 );
+
+const Tomato = styled.div`
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  background: tomato;
+  border-radius: 50%;
+`;
 
 export default MyComponent;
