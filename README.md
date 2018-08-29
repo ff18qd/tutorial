@@ -9,6 +9,7 @@ Use this repository to get to grips with the design patterns in our main repo.
 ![fork and clone](https://user-images.githubusercontent.com/30422939/42356290-48a4d626-8097-11e8-87b0-bbb3a967275f.JPG)
 5. $ cd tutorial-master. If you have named the folder differently cd to your folder where you saved the repo in the Command Prompt.
 6. Run $ yarn install
+![new yarn install](https://user-images.githubusercontent.com/30422939/44819907-4ed75d00-abb4-11e8-9017-23347bc8d73f.JPG)
 ![yarn installing](https://user-images.githubusercontent.com/30422939/42356292-4c18cd9e-8097-11e8-82ba-700134cdccca.JPG)
 7. Run $ yarn start, Wobbly app will be opened in your browser on localhost:3000
 ![after yarn start](https://user-images.githubusercontent.com/30422939/42356295-4e476148-8097-11e8-9dfa-ea21dd35fbd6.JPG)
