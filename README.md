@@ -11,7 +11,8 @@ Use this repository to get to grips with the design patterns in our main repo.
 6. Run $ yarn install
 ![new yarn install](https://user-images.githubusercontent.com/30422939/44819907-4ed75d00-abb4-11e8-9017-23347bc8d73f.JPG)
 7. Run $ yarn start, Wobbly app will be opened in your browser on localhost:3000
-
+![start](https://user-images.githubusercontent.com/30422939/44819979-8e9e4480-abb4-11e8-990c-87c36ceb598f.JPG)
+![new localhost](https://user-images.githubusercontent.com/30422939/44819982-9362f880-abb4-11e8-96c0-0ef882c698ea.JPG)
 8. INSIDE THE APPLICATION → Making and using stylised components.
 
 
