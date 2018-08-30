@@ -1,4 +1,4 @@
-# tutorial
+# Styled Components with Wobbly Tutorial
 Use this repository to get to grips with the design patterns in our main repo.
 
 1. Make sure you've installed,  yarn, and node to your machine, and your command line works. Git also makes the process easier, but is not a requirement.
@@ -14,8 +14,4 @@ Use this repository to get to grips with the design patterns in our main repo.
 ![start](https://user-images.githubusercontent.com/30422939/44819979-8e9e4480-abb4-11e8-990c-87c36ceb598f.JPG)
 ![new localhost](https://user-images.githubusercontent.com/30422939/44819982-9362f880-abb4-11e8-96c0-0ef882c698ea.JPG)
 8. INSIDE THE APPLICATION → Making and using stylised components.
-
-
-
-
 
